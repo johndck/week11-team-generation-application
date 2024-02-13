@@ -1,4 +1,4 @@
-# Team Profile Generator
+# Team Profile Generator - EDX - Week 12 Module
 
 ## Table of Contents
 
@@ -63,4 +63,4 @@ This project is covered under license: MIT.
 
 ## Credits
 
-This project was undertaken by John Dick without any collaborators for the purposes of assessment on the EDX bootcamp.
+This project was undertaken by John Dick without any collaborators for the purposes of assessment on the EDX bootcamp. The project used the inquirer and jest packages.
