@@ -148,11 +148,11 @@ const CaptureTeam = () => {
         createEngineer();
       }
       if (answers.options === "Finish building the team") {
-        console.log("Thank you for your answers");
-        console.dir(tempTeam, { depth: null });
+        //console.log("Thank you for your answers");
+        //console.dir(tempTeam, { depth: null });
 
         let html = render(tempTeam);
-        console.log(html);
+        //console.log(html);
 
         fs.writeFile(outputPath, html, (err) => {
           if (err) throw err;
@@ -195,10 +195,10 @@ const CaptureTeam = () => {
         createIntern();
       }
       if (answers.options === "Finish building the team") {
-        console.dir(tempTeam, { depth: null });
+        //console.dir(tempTeam, { depth: null });
 
         let html = render(tempTeam);
-        console.log(html);
+        //console.log(html);
 
         fs.writeFile(outputPath, html, (err) => {
           if (err) throw err;
@@ -224,12 +224,14 @@ const CaptureTeam = () => {
         answers.officeNumber
       );
 
+      /*
       console.log(`------------------`);
       console.log(teamManager.getRole());
       console.log(teamManager.getOfficeNumber());
       console.log(teamManager.getName());
       console.log(teamManager.getId());
       console.log(`------------------`);
+      */
 
       // push the new manager into the tempTeam array
       tempTeam.push(teamManager);
@@ -241,11 +243,11 @@ const CaptureTeam = () => {
         createIntern();
       }
       if (answers.options === "Finish building the team") {
-        console.log("Thank you for your answers");
-        console.dir(tempTeam, { depth: null });
+        //console.log("Thank you for your answers");
+        //console.dir(tempTeam, { depth: null });
 
         let html = render(tempTeam);
-        console.log(html);
+        //console.log(html);
 
         fs.writeFile(outputPath, html, (err) => {
           if (err) throw err;
@@ -262,21 +264,3 @@ const CaptureTeam = () => {
 };
 
 CaptureTeam();
-//createHtml();
-//storeHTML();
-
-/*
-const createHtml = () => {
-  // pass the tempTeam into the page-template.js
-};
-
-const storeHTML = (html) => {
-  // use FS
-};
-*/
-
-// TASKS to complete
-
-// 1. Create a function that will generate the HTML and store it in a file - to stop all the repeat code.
-// 2. Review the HTML code and understand why the CSS is not working
-// 3. Create the Github repo to hold the code
